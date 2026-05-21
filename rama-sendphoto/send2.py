@@ -12,15 +12,24 @@ import numpy as np
 # KONFIGURASI UTAMA
 # ============================================================
 DEVICE_ID = "R9RL106EV5D"
-PHONE_NUM = "628985509377"
+PHONE_NUMBERS = [
+    "628985509377",
+    "6281395977308",
+    ]
+
+PHONE_NUM = ""
 FILE_NAME = "tesvideo.mp4"
 
 # "0"  = WhatsApp ori / normal
 # "95" = WhatsApp Dual Messenger / clone
 USER = "95"
 
+
 FILE_PATH_HP = f"/storage/emulated/0/DCIM/sendWA/{FILE_NAME}"
 WHATSAPP_PACKAGE = "com.whatsapp"
+
+CLOSE_ALL_X_RATIO = 0.50
+CLOSE_ALL_Y_RATIO = 0.74
 
 SCREENSHOT_DEVICE = "/sdcard/screen.png"
 SCREENSHOT_LOCAL = "screen.png"
@@ -261,7 +270,6 @@ def cari_kontur_warna(
 # ======================= ENGINE USER 0 ======================
 # ============================================================
 # Bagian ini sengaja mengikuti kode pertama karena USER 0 di kode pertama sudah jalan.
-
 
 def u0_cari_badge_biru_dual(img):
     lower_blue = np.array([95, 70, 60])
@@ -942,6 +950,8 @@ def u95_buka_chat_dulu():
         f"-d \"https://wa.me/{PHONE_NUM}\""
     )
     jalankan_adb(cmd)
+    
+    time.sleep(3)
 
     if not u95_pilih_whatsapp_di_chooser("open_with", tap_just_once=True):
         print("USER 95: gagal memilih WhatsApp di layar Open With.")
@@ -999,6 +1009,44 @@ def main_user95():
         print("USER 95: proses selesai, tetapi ada tahap yang gagal.")
 
 # ============================================================
+# ============= CLOSING ALL TABS & HOME UI ===================
+# ============================================================
+
+def close_all_tab_lalu_home():
+    print("Reset HP: buka recent apps lalu close all...")
+
+    # Buka recent apps / task switcher
+    jalankan_adb("shell input keyevent 187")
+    time.sleep(1.5)
+
+    # Cara 1: coba klik tombol Close all via UIAutomator kalau kebaca
+    if tap_node_by_keywords(
+        ["close all", "tutup semua", "hapus semua"],
+        label="Close all recent apps",
+        prefer_bottom_right=False,
+    ):
+        time.sleep(1.5)
+        print("Berhasil klik Close all via UIAutomator.")
+        return True
+
+    # Cara 2: fallback tap koordinat tombol Close all
+    img = ambil_screenshot()
+    if img is not None:
+        tinggi_layar, lebar_layar, _ = img.shape
+
+        close_x = int(lebar_layar * CLOSE_ALL_X_RATIO)
+        close_y = int(tinggi_layar * CLOSE_ALL_Y_RATIO)
+
+        tap(close_x, close_y, label="fallback Close all")
+        time.sleep(1.5)
+
+    # Pastikan tetap balik ke home
+    jalankan_adb("shell input keyevent 3")
+    time.sleep(1)
+
+    return True
+
+# ============================================================
 # ============== HANDLING FILE TYPE SENT =====================
 # ============================================================
 
@@ -1045,22 +1093,39 @@ def tap_ok_modal_share():
 # MAIN DISPATCHER
 # ============================================================
 def main():
+    global PHONE_NUM
+    
     if USER not in ("0", "95"):
         print(f"USER tidak valid: {USER}. Isi USER dengan \"0\" atau \"95\".")
         return
+    
+    for index, nomor in enumerate(PHONE_NUMBERS, start=1):
+        PHONE_NUM = nomor.strip()
 
-    print("==================== KONFIGURASI AKTIF ====================")
-    print(f"DEVICE_ID : {DEVICE_ID}")
-    print(f"PHONE_NUM : {PHONE_NUM}")
-    print(f"FILE_NAME : {FILE_NAME}")
-    print(f"USER      : {USER} ({'WhatsApp Ori' if USER == '0' else 'WhatsApp Dual'})")
-    print("============================================================")
+        print("\n" + "=" * 60)
+        print(f"PROSES NOMOR {index}/{len(PHONE_NUMBERS)}")
+        print(f"TARGET: {PHONE_NUM}")
+        print(f"USER  : {USER}")
+        print("=" * 60)
+    
+        close_all_tab_lalu_home()
 
-    if USER == "0":
-        main_user0()
-    else:
-        main_user95()
+        print("==================== KONFIGURASI AKTIF ====================")
+        print(f"DEVICE_ID : {DEVICE_ID}")
+        print(f"PHONE_NUM : {PHONE_NUM}")
+        print(f"FILE_NAME : {FILE_NAME}")
+        print(f"USER      : {USER} ({'WhatsApp Ori' if USER == '0' else 'WhatsApp Dual'})")
+        print("============================================================")
 
+        if USER == "0":
+            main_user0()
+        else:
+            main_user95()
+    
+        print(f"Selesai proses untuk nomor: {PHONE_NUM}")
+    
+        time.sleep(3)
+    print("\nSEMUA NOMOR SELESAI DIPROSES.")
 
 if __name__ == "__main__":
     main()
