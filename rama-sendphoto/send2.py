@@ -22,7 +22,7 @@ FILE_NAME = "tesvideo.mp4"
 
 # "0"  = WhatsApp ori / normal
 # "95" = WhatsApp Dual Messenger / clone
-USER = "95"
+USER = "0"
 
 
 FILE_PATH_HP = f"/storage/emulated/0/DCIM/sendWA/{FILE_NAME}"
