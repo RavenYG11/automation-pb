@@ -1,0 +1,98 @@
+[
+    {
+        "source": "app_drawer",
+        "page": 1,
+        "text": "WhatsApp",
+        "desc": "WhatsApp",
+        "rid": "com.sec.android.app.launcher:id/icon",
+        "bounds": [
+            525,
+            167,
+            691,
+            360
+        ],
+        "bounds_raw": "[525,167][691,360]",
+        "clickable": true,
+        "xml": "debug/2026-05-22_10-38-19_wa_dual_discovery_user_default/launcher_appdrawer_page_1.xml"
+    },
+    {
+        "source": "app_drawer",
+        "page": 1,
+        "text": "WhatsApp",
+        "desc": "WhatsApp",
+        "rid": "com.sec.android.app.launcher:id/icon",
+        "bounds": [
+            27,
+            360,
+            193,
+            553
+        ],
+        "bounds_raw": "[27,360][193,553]",
+        "clickable": true,
+        "xml": "debug/2026-05-22_10-38-19_wa_dual_discovery_user_default/launcher_appdrawer_page_1.xml"
+    },
+    {
+        "source": "app_drawer",
+        "page": 2,
+        "text": "WhatsApp",
+        "desc": "WhatsApp",
+        "rid": "com.sec.android.app.launcher:id/icon",
+        "bounds": [
+            525,
+            167,
+            691,
+            360
+        ],
+        "bounds_raw": "[525,167][691,360]",
+        "clickable": true,
+        "xml": "debug/2026-05-22_10-38-19_wa_dual_discovery_user_default/launcher_appdrawer_page_2.xml"
+    },
+    {
+        "source": "app_drawer",
+        "page": 2,
+        "text": "WhatsApp",
+        "desc": "WhatsApp",
+        "rid": "com.sec.android.app.launcher:id/icon",
+        "bounds": [
+            27,
+            360,
+            193,
+            553
+        ],
+        "bounds_raw": "[27,360][193,553]",
+        "clickable": true,
+        "xml": "debug/2026-05-22_10-38-19_wa_dual_discovery_user_default/launcher_appdrawer_page_2.xml"
+    },
+    {
+        "source": "app_drawer",
+        "page": 3,
+        "text": "WhatsApp",
+        "desc": "WhatsApp",
+        "rid": "com.sec.android.app.launcher:id/icon",
+        "bounds": [
+            525,
+            167,
+            691,
+            360
+        ],
+        "bounds_raw": "[525,167][691,360]",
+        "clickable": true,
+        "xml": "debug/2026-05-22_10-38-19_wa_dual_discovery_user_default/launcher_appdrawer_page_3.xml"
+    },
+    {
+        "source": "app_drawer",
+        "page": 3,
+        "text": "WhatsApp",
+        "desc": "WhatsApp",
+        "rid": "com.sec.android.app.launcher:id/icon",
+        "bounds": [
+            27,
+            360,
+            193,
+            553
+        ],
+        "bounds_raw": "[27,360][193,553]",
+        "clickable": true,
+        "xml": "debug/2026-05-22_10-38-19_wa_dual_discovery_user_default/launcher_appdrawer_page_3.xml"
+    }
+]

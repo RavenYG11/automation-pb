@@ -1,0 +1,63 @@
+[
+    {
+        "label_hint": "WhatsApp Original",
+        "final_label": "WhatsApp Original",
+        "package": "com.whatsapp",
+        "detected_user": "0",
+        "launch_user": null,
+        "package_found": true,
+        "app_opened": true,
+        "status": "success",
+        "accounts": [
+            {
+                "name": "Donprat2",
+                "display_number": "+62 858-8262-4363",
+                "normalized_number": "+6285882624363",
+                "source": "account_switcher_bottom_sheet"
+            },
+            {
+                "name": "Dabukee 2",
+                "display_number": "+62 858-8262-4870",
+                "normalized_number": "+6285882624870",
+                "source": "account_switcher_bottom_sheet"
+            }
+        ],
+        "debug_dir": "debug/2026-05-22_10-35-44_whatsapp_original_user0",
+        "notes": []
+    },
+    {
+        "label_hint": "WhatsApp Dual / Clone",
+        "final_label": "WhatsApp Dual / Clone",
+        "package": "com.whatsapp",
+        "detected_user": "95",
+        "launch_user": "95",
+        "package_found": true,
+        "app_opened": true,
+        "status": "success",
+        "accounts": [
+            {
+                "name": "Daru Nainggolan",
+                "display_number": "+62 858-8262-4357",
+                "normalized_number": "+6285882624357",
+                "source": "account_switcher_bottom_sheet"
+            }
+        ],
+        "debug_dir": "debug/2026-05-22_10-36-56_whatsapp_dual_clone_user95",
+        "notes": []
+    },
+    {
+        "label_hint": "WhatsApp Business",
+        "final_label": "WhatsApp Business",
+        "package": "com.whatsapp.w4b",
+        "detected_user": null,
+        "launch_user": null,
+        "package_found": false,
+        "app_opened": false,
+        "status": "business_not_found",
+        "accounts": [],
+        "debug_dir": "debug/2026-05-22_10-36-58_wa_business_not_found_user_default",
+        "notes": [
+            "Package com.whatsapp.w4b tidak ditemukan."
+        ]
+    }
+]

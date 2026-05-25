@@ -1,0 +1,15 @@
+{
+    "label_hint": "WhatsApp Business",
+    "final_label": "WhatsApp Business",
+    "package": "com.whatsapp.w4b",
+    "detected_user": null,
+    "launch_user": null,
+    "package_found": false,
+    "app_opened": false,
+    "status": "business_not_found",
+    "accounts": [],
+    "debug_dir": "debug/2026-05-22_08-03-44_wa_business_not_found_user_default",
+    "notes": [
+        "Package com.whatsapp.w4b tidak ditemukan."
+    ]
+}

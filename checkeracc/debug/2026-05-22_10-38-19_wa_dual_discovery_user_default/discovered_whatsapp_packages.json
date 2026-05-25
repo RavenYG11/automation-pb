@@ -1,0 +1,21 @@
+{
+    "strict_whatsapp_packages": [
+        "com.whatsapp"
+    ],
+    "loose_related_packages": [
+        "com.samsung.android.app.watchmanager",
+        "com.samsung.android.wallpaper.live",
+        "com.samsung.android.wallpaper.res",
+        "com.whatsapp",
+        "com.val.hardware",
+        "com.samsung.android.app.watchmanagerstub",
+        "com.android.wallpaper.livepicker",
+        "com.android.wallpaperbackup",
+        "com.samsung.android.wifi.p2paware.resources",
+        "com.android.internal.display.cutout.emulation.waterfall",
+        "com.android.wallpapercropper",
+        "org.telegram.messenger",
+        "com.samsung.android.aware.service"
+    ],
+    "note": "Strict dibuka otomatis kalau bukan com.whatsapp/com.whatsapp.w4b. Loose cuma bukti debug supaya package Samsung/clone bisa dianalisis."
+}

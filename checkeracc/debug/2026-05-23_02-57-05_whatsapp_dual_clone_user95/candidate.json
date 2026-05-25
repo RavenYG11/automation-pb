@@ -1,0 +1,16 @@
+{
+    "source": "app_drawer",
+    "page": 0,
+    "text": "WhatsApp",
+    "desc": "WhatsApp",
+    "rid": "com.sec.android.app.launcher:id/icon",
+    "bounds": [
+        27,
+        360,
+        193,
+        553
+    ],
+    "bounds_raw": "[27,360][193,553]",
+    "clickable": true,
+    "xml": "debug/2026-05-23_02-55-26_wa_dual_discovery_user_default/launcher_appdrawer_page_0.xml"
+}

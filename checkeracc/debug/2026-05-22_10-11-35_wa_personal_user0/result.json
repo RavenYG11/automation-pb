@@ -1,0 +1,15 @@
+{
+    "label_hint": "WhatsApp Personal",
+    "final_label": "WhatsApp Personal",
+    "package": "com.whatsapp",
+    "detected_user": null,
+    "launch_user": "0",
+    "package_found": true,
+    "app_opened": false,
+    "status": "package_found_but_cannot_open",
+    "accounts": [],
+    "debug_dir": "debug/2026-05-22_10-11-35_wa_personal_user0",
+    "notes": [
+        "Package ditemukan, tapi app gagal dibuka lewat launcher/monkey."
+    ]
+}

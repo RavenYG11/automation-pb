@@ -1,0 +1,26 @@
+{
+    "label_hint": "WhatsApp Original",
+    "final_label": "WhatsApp Original",
+    "package": "com.whatsapp",
+    "detected_user": "0",
+    "launch_user": null,
+    "package_found": true,
+    "app_opened": true,
+    "status": "success",
+    "accounts": [
+        {
+            "name": "Donprat2",
+            "display_number": "+62 858-8262-4363",
+            "normalized_number": "+6285882624363",
+            "source": "account_switcher_bottom_sheet"
+        },
+        {
+            "name": "Dabukee 2",
+            "display_number": "+62 858-8262-4870",
+            "normalized_number": "+6285882624870",
+            "source": "account_switcher_bottom_sheet"
+        }
+    ],
+    "debug_dir": "debug/2026-05-23_02-58-58_whatsapp_original_user0",
+    "notes": []
+}

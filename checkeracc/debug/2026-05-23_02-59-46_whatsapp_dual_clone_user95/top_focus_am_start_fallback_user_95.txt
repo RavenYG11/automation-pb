@@ -1,0 +1,9 @@
+$ dumpsys window
+  mCurrentFocus=Window{6d211f4 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}
+  mFocusedApp=ActivityRecord{30829323 u0 com.sec.android.app.launcher/.activities.LauncherActivity t48}
+
+$ dumpsys activity activities
+      topResumedActivity=ActivityRecord{30829323 u0 com.sec.android.app.launcher/.activities.LauncherActivity t48}
+  ResumedActivity: ActivityRecord{30829323 u0 com.sec.android.app.launcher/.activities.LauncherActivity t48}
+  mCurrentFocus=Window{6d211f4 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}
+  mFocusedApp=ActivityRecord{30829323 u0 com.sec.android.app.launcher/.activities.LauncherActivity t48}

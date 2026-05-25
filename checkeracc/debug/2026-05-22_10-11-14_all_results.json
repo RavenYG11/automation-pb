@@ -1,0 +1,47 @@
+[
+    {
+        "label_hint": "WhatsApp Personal",
+        "final_label": "WhatsApp Personal",
+        "package": "com.whatsapp",
+        "detected_user": null,
+        "launch_user": "0",
+        "package_found": true,
+        "app_opened": false,
+        "status": "package_found_but_cannot_open",
+        "accounts": [],
+        "debug_dir": "debug/2026-05-22_10-10-43_wa_personal_user0",
+        "notes": [
+            "Package ditemukan, tapi app gagal dibuka lewat launcher/monkey."
+        ]
+    },
+    {
+        "label_hint": "WhatsApp Dual / Clone",
+        "final_label": "WhatsApp Dual / Clone",
+        "package": "com.whatsapp",
+        "detected_user": null,
+        "launch_user": null,
+        "package_found": true,
+        "app_opened": false,
+        "status": "clone_not_found",
+        "accounts": [],
+        "debug_dir": "debug/2026-05-22_10-11-12_wa_dual_clone_not_found_user_default",
+        "notes": [
+            "Tidak ada bukti instance Dual/Clone yang berhasil dibuka atau terbaca."
+        ]
+    },
+    {
+        "label_hint": "WhatsApp Business",
+        "final_label": "WhatsApp Business",
+        "package": "com.whatsapp.w4b",
+        "detected_user": null,
+        "launch_user": null,
+        "package_found": false,
+        "app_opened": false,
+        "status": "business_not_found",
+        "accounts": [],
+        "debug_dir": "debug/2026-05-22_10-11-13_wa_business_not_found_user_default",
+        "notes": [
+            "Package com.whatsapp.w4b tidak ditemukan."
+        ]
+    }
+]

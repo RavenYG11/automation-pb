@@ -1,0 +1,20 @@
+{
+    "label_hint": "WhatsApp Dual / Clone",
+    "final_label": "WhatsApp Dual / Clone",
+    "package": "com.whatsapp",
+    "detected_user": "95",
+    "launch_user": "95",
+    "package_found": true,
+    "app_opened": true,
+    "status": "success",
+    "accounts": [
+        {
+            "name": "Daru Nainggolan",
+            "display_number": "+62 858-8262-4357",
+            "normalized_number": "+6285882624357",
+            "source": "account_switcher_bottom_sheet"
+        }
+    ],
+    "debug_dir": "debug/2026-05-23_02-59-46_whatsapp_dual_clone_user95",
+    "notes": []
+}

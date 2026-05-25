@@ -1,0 +1,9 @@
+$ dumpsys window
+  mCurrentFocus=Window{80a34bf u95 com.whatsapp/com.whatsapp.home.ui.HomeActivity}
+  mFocusedApp=ActivityRecord{97142487 u95 com.whatsapp/.home.ui.HomeActivity t668}
+
+$ dumpsys activity activities
+    topResumedActivity=ActivityRecord{97142487 u95 com.whatsapp/.home.ui.HomeActivity t668}
+  ResumedActivity: ActivityRecord{97142487 u95 com.whatsapp/.home.ui.HomeActivity t668}
+  mCurrentFocus=Window{80a34bf u95 com.whatsapp/com.whatsapp.home.ui.HomeActivity}
+  mFocusedApp=ActivityRecord{97142487 u95 com.whatsapp/.home.ui.HomeActivity t668}

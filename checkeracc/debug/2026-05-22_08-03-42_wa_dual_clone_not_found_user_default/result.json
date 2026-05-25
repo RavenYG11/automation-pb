@@ -1,0 +1,15 @@
+{
+    "label_hint": "WhatsApp Dual / Clone",
+    "final_label": "WhatsApp Dual / Clone",
+    "package": "com.whatsapp",
+    "detected_user": null,
+    "launch_user": null,
+    "package_found": true,
+    "app_opened": false,
+    "status": "clone_not_found",
+    "accounts": [],
+    "debug_dir": "debug/2026-05-22_08-03-42_wa_dual_clone_not_found_user_default",
+    "notes": [
+        "Tidak ada bukti instance Dual/Clone yang berhasil dibuka atau terbaca."
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "label_hint": "WhatsApp Personal",
+    "final_label": "WhatsApp Original",
+    "package": "com.whatsapp",
+    "detected_user": "0",
+    "launch_user": null,
+    "package_found": true,
+    "app_opened": true,
+    "status": "opened_but_navigation_failed",
+    "accounts": [],
+    "debug_dir": "debug/2026-05-22_09-59-14_wa_personal_user_default",
+    "notes": [
+        "Gagal masuk Settings/Pengaturan."
+    ]
+}

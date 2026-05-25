@@ -1,0 +1,31 @@
+[
+    {
+        "candidate_index": 1,
+        "candidate": {
+            "source": "app_drawer",
+            "page": 0,
+            "text": "WhatsApp",
+            "desc": "WhatsApp",
+            "rid": "com.sec.android.app.launcher:id/icon",
+            "bounds": [
+                27,
+                360,
+                193,
+                553
+            ],
+            "bounds_raw": "[27,360][193,553]",
+            "clickable": true,
+            "xml": "debug/2026-05-23_02-55-26_wa_dual_discovery_user_default/launcher_appdrawer_page_0.xml"
+        },
+        "status": "success",
+        "accounts": [
+            {
+                "name": "Daru Nainggolan",
+                "display_number": "+62 858-8262-4357",
+                "normalized_number": "+6285882624357",
+                "source": "account_switcher_bottom_sheet"
+            }
+        ],
+        "debug_dir": "debug/2026-05-23_02-57-05_whatsapp_dual_clone_user95"
+    }
+]
